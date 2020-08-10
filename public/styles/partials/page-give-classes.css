@@ -122,15 +122,38 @@
 
     .schedule-item{
         display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-columns: 2fr 1fr 1fr 0.2fr;
         column-gap: 1.6rem;
+    }
 
+    #remove-field{
+        width: 100%;
+        height: 5.6rem;
+        margin-top: 0.8rem;
+        border-radius: 0.8rem;
+        background-color: var(--color-line-in-white);
+        color: var(--color-remove-button);
+        border: 1px solid var(--color-line-in-white);
+        outline: 0;      
+        padding: 0 1.6rem;
+        font: 4rem Archivo;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    #remove-field:hover{
+        background: var(--color-line-in-dark);
     }
 
     #page-give-classes #schedule-items .select-block + .input-block,
     #page-give-classes #schedule-items .input-block + .input-block{
         margin-top: 0;
     }
+    #page-give-classes #schedule-items{
+        display:flex;
+    }
+
 
     #page-give-classes main footer{
         padding: 40px 64px;
